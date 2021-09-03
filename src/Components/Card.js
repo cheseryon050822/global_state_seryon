@@ -9,7 +9,7 @@ const useStyles = makeStyles({
         minWindh:275,
         width:300,
         border:'1px solid #ccc',
-        margin:'0px'
+        margin:'3px'
     },
 bullet:{
     display:'inline=block',
@@ -17,10 +17,10 @@ bullet:{
     transfrom:'scale(0.8)',
 },
 title:{
-    fontSize:0,
+    fontSize:14,
 },
 pos:{
-    marginBottom:6,
+    marginBottom:12,
 },
 });
 export default function SimpleCard({user}){
@@ -30,7 +30,7 @@ export default function SimpleCard({user}){
     return(
         <Card className={classes.root}>
             <CardContent>
-            <Typography className={classes.title}
+                <Typography className={classes.title}
             color="textSecondary" gutterBottom>
                 ID:{user.id}
             </Typography>

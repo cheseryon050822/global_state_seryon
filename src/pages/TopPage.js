@@ -22,8 +22,7 @@ console.log(globalState)
                     return(
                 <Card user={user} key={index}/>
                 )
-            })
-            }
+            })            }
         </div>
         
     )
